@@ -1,0 +1,63 @@
+/* Defining style variables */
+:root {
+    --color-background: #D9D9D9;
+    --color-background-dark: #A4A4A4;
+    --color-background-nav: #797979;
+
+    --color-light-text: #FFFFFF;
+    --color-light-text-highlight: #b6b6b6;
+    --color-dark-text: #000000;
+}
+
+/* Defining global styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+.header-title {
+    background-color: var(--color-background-dark);
+    height: 6vh;
+    display: flex;
+    justify-content: center; /* Center content in the middle (horizontally) */
+    align-items: center; /* Center content in the middle (vertically) */
+}
+
+.header-nav {
+    background-color: var(--color-background-nav);
+    display: flex;
+    justify-content: center; /* Center content in the middle (horizontally) */
+    align-items: center; /* Center content in the middle (vertically) */
+}
+
+.header-nav ul {
+    list-style: none; /* Remove list dots */
+}
+
+.header-nav li {
+    display: inline-block; /* Display list items in a row */
+    padding: 1em; /* Adds 1em of padding around the li tag */
+}
+
+.header-nav li a {
+    text-decoration: none; /* Remove any standard a tag ("link") styling  */
+    color: var(--color-light-text);
+    text-align: center;
+}
+
+/* Very basic styling when user hovers the a tag in the navigation */
+.header-nav li a:hover {
+    color: var(--color-light-text-highlight);
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--color-background-dark);
+}
+
