@@ -1,9 +1,10 @@
 /* Defining style variables */
 :root {
+    /* Background colors */
     --color-background: #D9D9D9;
     --color-background-dark: #A4A4A4;
     --color-background-nav: #797979;
-
+    /* Text colors */
     --color-light-text: #FFFFFF;
     --color-light-text-highlight: #b6b6b6;
     --color-dark-text: #000000;
@@ -11,10 +12,12 @@
 
 /* Defining global styles */
 * {
+    /* Just setting default margin and padding to 0 */
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Setting font family */
+    font-weight: normal; /* Setting weight to normal, because the default is ugly */
 }
 
 body {
@@ -25,7 +28,7 @@ body {
 
 .header-title {
     background-color: var(--color-background-dark);
-    height: 6vh;
+    height: 6vh; /* Set height of title div */
     display: flex;
     justify-content: center; /* Center content in the middle (horizontally) */
     align-items: center; /* Center content in the middle (vertically) */
@@ -60,11 +63,11 @@ body {
 }
 
 .home-container {
-    margin: 2em 0 2em 0;
+    margin: 2em 0 2em 0; /* Home page container margin */
 }
 
 .category {
-    text-align: center;
+    text-align: center; /* Center aligning text */
 }
 
 .category h1 {
@@ -83,7 +86,7 @@ body {
 }
 
 .category-item img {
-    width: 100%;
+    width: 100%; /* Set image with to that of the container */
 }
 
 .category-item h2 {
