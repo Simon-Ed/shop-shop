@@ -20,6 +20,7 @@
 body {
     background-color: var(--color-background);
     min-height: 100vh;
+    position: relative;
 }
 
 .header-title {
@@ -60,6 +61,21 @@ body {
 
 .home-container {
     margin: 2em 0 2em 0;
+}
+
+.category {
+
+}
+
+.category-item {
+    width: 33vw;
+    height: 30vh;
+
+    display: inline-block;
+}
+
+.category-item img {
+    width: 100%;
 }
 
 .home-article {
