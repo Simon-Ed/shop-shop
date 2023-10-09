@@ -19,6 +19,7 @@
 
 body {
     background-color: var(--color-background);
+    min-height: 100vh;
 }
 
 .header-title {
@@ -57,9 +58,20 @@ body {
     cursor: pointer;
 }
 
+.home-container {
+    margin: 2em 0 2em 0;
+}
+
+.home-article {
+    margin: auto 25vw auto 25vw;
+}
+
 footer {
     background-color: var(--color-background-dark);
     text-align: center; /* Align text in center */
     padding: 1em 0 1em 0; /* Adds 1em of padding to top and bottom */
+    position: absolute; /* Make the position absolute */
+    bottom: 0; /* Put the footer at the bottom of the page */
+    width: 100%; /* Set width of the footer to 100% */
 }
 
