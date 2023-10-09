@@ -1,9 +1,12 @@
-Standard-kantarell.jpg:
+kantarell_r32.jpg:
 Cantharellus cibarius, kantarell. Foto fra: Løvenholm Skov
 Cantharellus cibarius
 Av Biopix/※.
 Lisens: Begrenset gjenbruk
 
 
-COD.JPG:
+cod_r32.png:
 https://en.wikipedia.org/wiki/Cod
+
+tytte_r32.jpg:
+https://en.wikipedia.org/wiki/Berry#/media/File:Tytteb%C3%A6r.jpg
