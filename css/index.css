@@ -66,18 +66,29 @@ body {
     margin: 2em 0 2em 0; /* Home page container margin */
 }
 
+/*Uses a mobile first approach ensuring that the grid accomodates smaller screens
+first*/
 .category {
     text-align: center; /* Center aligning text */
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr; /*Creates 3 columns in the grid */
-    grid-template-rows: 3em auto; /*makes columns fit the header and the other aut*/
+    grid-template-columns: 1fr; /*Creates 1 column in the grid */
+    grid-template-rows: 3em auto; /*makes columns fit the header and the others auto*/
 }
 
 .category h1 {
     margin-bottom: 0.4em; /* Add some space */
-    grid-area: 1/1/1/4;
+    grid-area: 1/1/1/1; /*Asigns area for the header*/
 }
 
+/*Adjusts the grid for a wide format for larger screens*/
+@media only screen and (min-width: 812px){
+.category {
+    grid-template-columns: 1fr 1fr 1fr; /*Creates 3 columns in the grid */
+}
+.category h1 {
+    grid-area: 1/1/1/4; /*Asigns area for the header*/
+}
+}
 .category-item {
     display: inline-block; /* Displays items as inline blocks */
     line-height: 0; /* Remove line height caused by inline-block */
