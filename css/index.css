@@ -11,19 +11,41 @@
 }
 
 /* Defining global styles */
+
 * {
     /* Just setting default margin and padding to 0 */
     margin: 0;
     padding: 0;
-    
+
     font-family: Verdana, Geneva, Tahoma, sans-serif; /* Setting font family */
     font-weight: normal; /* Setting weight to normal, because the default is ugly */
+}
+
+/*Creates a grid that spans the three "main" elements*/
+#page {
+    display:grid;
+    grid-template-columns: 1fr; /* Creates one column*/
+    grid-template-rows: 1fr 1fr 1fr; /*Creates three rows*/
+    height: 100vh; /*Makes the grid span the whole page*/
+    width: 100%;
 }
 
 body {
     background-color: var(--color-background);
     min-height: 100vh;
     position: relative;
+}
+/*asigns places in the grid*/
+header{
+    grid-row: 1;
+}
+
+.home-container{
+    grid-row: 2;
+}
+
+footer{
+    grid-row:3;
 }
 
 .header-title {
@@ -126,7 +148,7 @@ footer {
     background-color: var(--color-background-dark);
     text-align: center; /* Align text in center */
     padding: 1em 0 1em 0; /* Adds 1em of padding to top and bottom */
-    position: absolute; /* Make the position absolute */
+   
     bottom: 0; /* Put the footer at the bottom of the page */
     width: 100%; /* Set width of the footer to 100% */
 }
