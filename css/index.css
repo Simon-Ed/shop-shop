@@ -68,14 +68,17 @@ body {
 
 .category {
     text-align: center; /* Center aligning text */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; /*Creates 3 columns in the grid */
+    grid-template-rows: 3em auto; /*makes columns fit the header and the other aut*/
 }
 
 .category h1 {
     margin-bottom: 0.4em; /* Add some space */
+    grid-area: 1/1/1/4;
 }
 
 .category-item {
-    width: 33%; /* Set item width to 33% of screen width */
     display: inline-block; /* Displays items as inline blocks */
     line-height: 0; /* Remove line height caused by inline-block */
     position: relative; /* Relative positioning inside items for overlay tag */
