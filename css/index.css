@@ -54,9 +54,7 @@ footer{
     display: flex;
     justify-content: center; /* Center content in the middle (horizontally) */
     align-items: center; /* Center content in the middle (vertically) */
-    text-decoration: none; /* Remove underlines from links */
     font-family: 'Lobster', sans-serif; /* Specify the desired font */
-    color: #000000; /* Set the text color */
     letter-spacing: 3px;
 }
 
@@ -65,7 +63,6 @@ footer{
     display: flex;
     justify-content: center; /* Center content in the middle (horizontally) */
     align-items: center; /* Center content in the middle (vertically) */
-    text-decoration: none; /* Remove underlines from links */
 }
 
 .header-nav ul {
