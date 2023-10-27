@@ -148,8 +148,6 @@ footer {
     background-color: var(--color-background-dark);
     text-align: center; /* Align text in center */
     padding: 1em 0 1em 0; /* Adds 1em of padding to top and bottom */
-   
-    bottom: 0; /* Put the footer at the bottom of the page */
     width: 100%; /* Set width of the footer to 100% */
 }
 
