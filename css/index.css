@@ -54,6 +54,8 @@ footer{
     display: flex;
     justify-content: center; /* Center content in the middle (horizontally) */
     align-items: center; /* Center content in the middle (vertically) */
+    font-family: 'Lobster', sans-serif; /* Specify the desired font */
+    letter-spacing: 3px;
 }
 
 .header-nav {
@@ -65,6 +67,7 @@ footer{
 
 .header-nav ul {
     list-style: none; /* Remove list dots */
+    letter-spacing: 3px;
 }
 
 .header-nav li {
@@ -76,6 +79,8 @@ footer{
     text-decoration: none; /* Remove any standard a tag ("link") styling  */
     color: var(--color-light-text);
     text-align: center;
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+    font-family: 'Lobster', sans-serif; /* Specify the desired font */
 }
 
 /* Very basic styling when user hovers the a tag in the navigation */
