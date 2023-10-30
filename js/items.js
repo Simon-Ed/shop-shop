@@ -10,15 +10,21 @@ function appendItemToHtml(item) {
 
 };
 
-function populateItems() {
-    console.log(jsonobjects)
+function populateItems(filter) {
+    document.querySelector('.products').innerHTML = ''
     for (let i = 0; i < jsonobjects.length; i++) {
-        appendItemToHtml(jsonobjects[i])
+        if (filter == 'all' || filter == jsonobjects[i].type) {
+            appendItemToHtml(jsonobjects[i])
+        }
     }
 }
 
 fetch("../json/items.json").then((response) => response.json())
-.then(function (json){
-    jsonobjects = json
-    populateItems()
-});
+    .then(function (json) {
+        jsonobjects = json
+        populateItems('all')
+    });
+document.querySelector('#products').addEventListener('click', function (event) {
+    console.log(this.value)
+    populateItems(this.value)
+})

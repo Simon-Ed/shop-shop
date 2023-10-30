@@ -1,20 +1,136 @@
 [
     {
-        "name": "item1",
-        "price": 10,
-        "info": "info1",
-        "imageurl": "images/coalfish.jpg"
+        "name": "Cod class",
+        "price": 0,
+        "info": "This is a cod fish",
+        "imageurl": "images/cod_r32.png",
+        "type": "fish"
     },
     {
-        "name": "item2",
-        "price": 20,
-        "info": "info2",
-        "imageurl": "images/coalfish.jpg"
+        "name": "Coalfish class",
+        "price": 0,
+        "info": "This is a coalfish",
+        "imageurl": "images/coalfish.jpg",
+        "type": "fish"
     },
     {
-        "name": "item3",
-        "price": 30,
-        "info": "info3",
-        "imageurl": "images/coalfish.jpg"
+        "name": "Salmon class",
+        "price": 0,
+        "info": "This is a salmon",
+        "imageurl": "images/laks2.jpg",
+        "type": "fish"
+    },
+    {
+        "name": "Cod class",
+        "price": 0,
+        "info": "This is a cod fish",
+        "imageurl": "images/cod_r32.png",
+        "type": "fish"
+    },
+    {
+        "name": "Coalfish class",
+        "price": 0,
+        "info": "This is a coalfish",
+        "imageurl": "images/coalfish.jpg",
+        "type": "fish"
+    },
+    {
+        "name": "Salmon class",
+        "price": 0,
+        "info": "This is a salmon",
+        "imageurl": "images/laks2.jpg",
+        "type": "fish"
+    },
+    {
+        "name": "Cod class",
+        "price": 0,
+        "info": "This is a cod fish",
+        "imageurl": "images/cod_r32.png",
+        "type": "fish"
+    },
+    {
+        "name": "Coalfish class",
+        "price": 0,
+        "info": "This is a coalfish",
+        "imageurl": "images/coalfish.jpg",
+        "type": "fish"
+    },
+    {
+        "name": "Salmon class",
+        "price": 0,
+        "info": "This is a salmon",
+        "imageurl": "images/laks2.jpg",
+        "type": "fish"
+    },
+    {
+        "name": "kantarell",
+        "price": 0,
+        "info": "This is a klantarell",
+        "imageurl": "images/kantarell_r32.jpg",
+        "type": "mushroom"
+    }
+    ,
+    {
+        "name": "kantarell",
+        "price": 0,
+        "info": "This is a klantarell",
+        "imageurl": "images/kantarell_r32.jpg",
+        "type": "mushroom"
+    },
+    {
+        "name": "kantarell",
+        "price": 0,
+        "info": "This is a klantarell",
+        "imageurl": "images/kantarell_r32.jpg",
+        "type": "mushroom"
+    },
+    {
+        "name": "kantarell",
+        "price": 0,
+        "info": "This is a klantarell",
+        "imageurl": "images/kantarell_r32.jpg",
+        "type": "mushroom"
+    },
+    {
+        "name": "kantarell",
+        "price": 0,
+        "info": "This is a klantarell",
+        "imageurl": "images/kantarell_r32.jpg",
+        "type": "mushroom"
+    },
+    {
+        "name": "tyttebær",
+        "price": 0,
+        "info": "This is a tyttebær",
+        "imageurl": "images/tytte_r32.jpg",
+        "type": "berry"
+    },
+    {
+        "name": "tyttebær",
+        "price": 0,
+        "info": "This is a tyttebær",
+        "imageurl": "images/tytte_r32.jpg",
+        "type": "berry"
+    },
+    {
+        "name": "tyttebær",
+        "price": 0,
+        "info": "This is a tyttebær",
+        "imageurl": "images/tytte_r32.jpg",
+        "type": "berry"
+    },
+    {
+        "name": "tyttebær",
+        "price": 0,
+        "info": "This is a tyttebær",
+        "imageurl": "images/tytte_r32.jpg",
+        "type": "berry"
+    },
+    {
+        "name": "tyttebær",
+        "price": 0,
+        "info": "This is a tyttebær",
+        "imageurl": "images/tytte_r32.jpg",
+        "type": "berry"
     }
 ]
