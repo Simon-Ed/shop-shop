@@ -1,0 +1,20 @@
+[
+    {
+        "name": "item1",
+        "price": 10,
+        "info": "info1",
+        "imageurl": "images/coalfish.jpg"
+    },
+    {
+        "name": "item2",
+        "price": 20,
+        "info": "info2",
+        "imageurl": "images/coalfish.jpg"
+    },
+    {
+        "name": "item3",
+        "price": 30,
+        "info": "info3",
+        "imageurl": "images/coalfish.jpg"
+    }
+]
