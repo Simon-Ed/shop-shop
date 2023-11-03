@@ -53,8 +53,8 @@
 
 .products {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Display 5 items in each row by only allowing 5 columns */
-    gap: 15px; /* Add some gap between items */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* minimum size for product is 200px and max is 1fr, this means that the products will rearrange depending on size of page. */
+    gap: 10px; /* Add some gap between items */
     justify-content: center; /* Center the items horizontally */
     align-content: start; /* Align items to the top of each row */
 }
