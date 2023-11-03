@@ -13,6 +13,7 @@ function appendItemToHtml(item) {
 };
 //takes a filter, defined by the selection box, and populates the webpage with the items that match the filter.
 function populateItems(filter) {
+    document.querySelector('#product-item').textContent = filter
     document.querySelector('.products').innerHTML = ''
     for (let i = 0; i < jsonobjects.length; i++) {
         if (filter == 'all' || filter == jsonobjects[i].type) {
