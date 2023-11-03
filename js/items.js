@@ -1,13 +1,34 @@
+class product {
+    constructor(name, price, info, imageurl){
+        this.name = name
+        this.price = price
+        this.info = info
+        this.imageurl = imageurl
+    }
+    generatDiv() {
+    let div = document.createElement('div')
+    div.className = 'products-item';
+    div.innerHTML = `<img src = "${this.imageurl}" class="products-item">
+    <p>name : ${this.name}</p>
+    <p>price: ${this.price}</p>
+    <p>info :${this.info}</p>`
+    return div
+    }
+
+}
+
+
+function convertJsonToProduct(item){
+    return new product(item.name,item.price,item.info,item.imageurl)
+}
+
 let jsonobjects;
+
 
 //creates a div element and adds content to it from the json object passed to it.
 function appendItemToHtml(item) {
-    let div = document.createElement('div')
-    div.className = 'products-item';
-    div.innerHTML = `<img src = "${item.imageurl}" class="products-item">
-    <p>name : ${item.name}</p>
-    <p>price: ${item.price}</p>
-    <p>info :${item.info}</p>`
+    let div = item.generatDiv()
+    console.log(div)
     document.querySelector('.products').appendChild(div)
 
 };
@@ -17,7 +38,7 @@ function populateItems(filter) {
     document.querySelector('.products').innerHTML = ''
     for (let i = 0; i < jsonobjects.length; i++) {
         if (filter == 'all' || filter == jsonobjects[i].type) {
-            appendItemToHtml(jsonobjects[i])
+            appendItemToHtml(convertJsonToProduct(jsonobjects[i]))
         }
     }
 }
