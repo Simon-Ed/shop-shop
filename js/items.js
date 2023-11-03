@@ -28,7 +28,6 @@ let jsonobjects;
 //creates a div element and adds content to it from the json object passed to it.
 function appendItemToHtml(item) {
     let div = item.generatDiv()
-    console.log(div)
     document.querySelector('.products').appendChild(div)
 
 };
