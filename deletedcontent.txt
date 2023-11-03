@@ -1,0 +1,73 @@
+
+<div>
+                        <img src="images/cod_r32.png" alt="Cod class" class="products-item">
+                        <p class="text">This is a cod fish</p>
+                        <p class="text">More info</p>
+                        <p class="text">More info</p>
+                    </div>
+                    <div>
+                        <img src="images/coalfish.jpg" alt="Coalfish class" class="products-item">
+                        <p class="text">This is a coalfish</p>
+                        <p class="text">More info</p>
+                        <p class="text">More info</p>
+                    </div>
+                    <div>
+                        <img src="images/laks2.jpg" alt="Salmon class" class="products-item">
+                        <p class="text">This is a salmon</p>
+                        <p class="text">More info</p>
+                        <p class="text">More info</p>
+                    </div>
+                    <div>
+                        <img src="images/cod_r32.png" alt="Cod class" class="products-item">
+                        <p class="text">This is a cod fish</p>
+                        <p class="text">More info</p>
+                        <p class="text">More info</p>
+                    </div>
+                    <div>
+                        <img src="images/coalfish.jpg" alt="Coalfish class" class="products-item">
+                        <p class="text">This is a coalfish</p>
+                        <p class="text">More info</p>
+                        <p class="text">More info</p>
+                    </div>
+                    <div>
+                        <img src="images/laks2.jpg" alt="Salmon class" class="products-item">
+                        <p class="text">This is a salmon</p>
+                        <p class="text">More info</p>
+                        <p class="text">More info</p>
+                    </div>
+                    <div>
+                        <img src="images/cod_r32.png" alt="Cod class" class="products-item">
+                        <p class="text">This is a cod fish</p>
+                        <p class="text">More info</p>
+                        <p class="text">More info</p>
+                    </div>
+                    <div>
+                        <img src="images/coalfish.jpg" alt="Coalfish class" class="products-item">
+                        <p class="text">This is a coalfish</p>
+                        <p class="text">More info</p>
+                        <p class="text">More info</p>
+                    </div>
+                    <div>
+                        <img src="images/laks2.jpg" alt="Salmon class" class="products-item">
+                        <p class="text">This is a salmon</p>
+                        <p class="text">More info</p>
+                        <p class="text">More info</p>
+                    </div>
+                    <div>
+                        <img src="images/cod_r32.png" alt="Cod class" class="products-item">
+                        <p class="text">This is a cod fish</p>
+                        <p class="text">More info</p>
+                        <p class="text">More info</p>
+                    </div>
+                    <div>
+                        <img src="images/coalfish.jpg" alt="Coalfish class" class="products-item">
+                        <p class="text">This is a coalfish</p>
+                        <p class="text">More info</p>
+                        <p class="text">More info</p>
+                    </div>
+                    <div>
+                        <img src="images/laks2.jpg" alt="Salmon class" class="products-item">
+                        <p class="text">This is a salmon</p>
+                        <p class="text">More info</p>
+                        <p class="text">More info</p>
+                    </div>

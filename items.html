@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Shop items</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/items.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+    <script src="./js/items.js" defer></script>
 </head>
 <body>
     <main>
-        <div id="itemspage"></div>
-        <header>
-            <h1 class="header title">Shop Shop items</h1>
-            <nav class="header-nav">
-                <select name="Products" id="products">
-                    <option value="fish">Fish</option>
-                    <option value="mushrooms">Mushrooms</option>
-                    <option value="berries">Berries</option>
-                    <option value="all products">all products</option>
-                  </select>
-        </header>
-			<div class="home-container">
-				<div class="products">
-					<h1 id="product-item">Product</h1>
-				</div>
+        <div id="itemspage">
+            <header>
+                <h1 class="header-title">Shop Shop items</h1>
+                <nav class="header-nav">
+                    <select name="Products" id="products">
+                        <option value="all" selected="selected">all products</option>
+                        <option value="fish">Fish</option>
+                        <option value="mushroom">Mushrooms</option>
+                        <option value="berry">Berries</option>
+                        
+                    </select>
+                </nav>
+            </header>
+            <div class="products-container">
+                <div class="product-header"> 
+                    <h1 id="product-item">Product</h1>
+                </div>
+                <div class="products">
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>

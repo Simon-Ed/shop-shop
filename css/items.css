@@ -1,0 +1,92 @@
+/* Defining style variables */
+:root {
+    /* Background colors */
+    --color-background: #D9D9D9;
+    --color-background-dark: #A4A4A4;
+    --color-background-nav: #797979;
+    /* Text colors */
+    --color-light-text: #FFFFFF;
+    --color-light-text-highlight: #b6b6b6;
+    --color-dark-text: #000000;
+}
+
+/* Defining global styles */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Setting font family */
+    font-weight: normal; /* Setting weight to normal, because the default is ugly */
+}
+
+/* Removing margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-title {
+    background-color: var(--color-background-dark);
+    height: 6vh; /* Set height of title div */
+    display: flex;
+    justify-content: center; /* Center content in the middle (horizontally) */
+    align-items: center; /* Center content in the middle (vertically) */
+    font-family: 'Lobster'; /* Specify the desired font */
+    font-size: 35px;
+    letter-spacing: 3px;
+    z-index: 2; /* Set a higher z-index to make sure it's above the products drop down menu */
+}
+
+
+.header-nav {
+    background-color: var(--color-background-dark);
+    height: 6vh; /* Set height of peoduct dropdown menu nav */
+    text-align: left;  
+}
+
+/*Adjusts the styling, size and color of the products item dropdown menu */
+#products {
+    width: 150px;
+    padding: 3px;
+    background-color: #FFFFFF;
+    color: #333;
+    font-size: 14px;
+    border-radius: 5px;
+    display: flex;
+    z-index: 1; /* Set a lower z-index to make sure it's behind the title */
+}
+
+/* Changes font size, family and alignment of products item header title*/
+#product-item {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lobster';
+}
+
+#products:hover {
+    background-color: #ccc; /*Changes color of producrts dropdown menu when hovered over */
+}
+
+#products option {
+    background-color: #fff; /* Background color for options */
+    color: #333; /* Text color for options */
+    font-size: 16px; /* Font size for options */
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Display 5 items in each row by only allowing 5 columns */
+    gap: 10px; /* Add some gap between items */
+    justify-content: center; /* Center the items horizontally */
+    align-content: start; /* Align items to the top of each row */
+}
+
+.products-item {
+    max-width: 100%; /* Ensure the images don't exceed their container's width */
+    height: auto; /* Maintain the aspect ratio of the images */
+}
+
+
+
+
+
+
+
