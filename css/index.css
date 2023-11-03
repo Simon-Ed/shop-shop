@@ -89,8 +89,8 @@ footer{
     cursor: pointer;
 }
 
-.header-nav.Home-page{
-    color: var(--color-light-text-highlight); 
+.header-nav .currentPage {
+    color: black;
 }
 
 .home-container {
