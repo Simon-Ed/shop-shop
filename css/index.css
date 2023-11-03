@@ -91,6 +91,7 @@ footer{
 
 .header-nav .currentPage {
     color: black;
+    text-decoration: underline;
 }
 
 .home-container {
