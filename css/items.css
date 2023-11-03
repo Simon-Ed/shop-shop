@@ -10,26 +10,7 @@
     --color-dark-text: #000000;
 }
 
-/* Defining global styles */
-
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Setting font family */
-    font-weight: normal; /* Setting weight to normal, because the default is ugly */
-}
-
-/* Removing margin and padding for all elements */
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .header-title {
-    background-color: var(--color-background-dark);
-    height: 6vh; /* Set height of title div */
-    display: flex;
-    justify-content: center; /* Center content in the middle (horizontally) */
-    align-items: center; /* Center content in the middle (vertically) */
-    font-family: 'Lobster'; /* Specify the desired font */
     font-size: 35px;
     letter-spacing: 3px;
     z-index: 2; /* Set a higher z-index to make sure it's above the products drop down menu */
@@ -37,7 +18,6 @@
 
 
 .header-nav {
-    background-color: var(--color-background-dark);
     height: 6vh; /* Set height of peoduct dropdown menu nav */
     text-align: left;  
 }
@@ -74,7 +54,7 @@
 .products {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* Display 5 items in each row by only allowing 5 columns */
-    gap: 10px; /* Add some gap between items */
+    gap: 15px; /* Add some gap between items */
     justify-content: center; /* Center the items horizontally */
     align-content: start; /* Align items to the top of each row */
 }

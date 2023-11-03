@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Shop items</title>
     <link rel="stylesheet" href="./css/items.css">
+    <link rel="stylesheet" href="./css/index.css"
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
     <script src="./js/items.js" defer></script>
 </head>
@@ -12,6 +13,21 @@
     <main>
         <div id="itemspage">
             <header>
+				<!-- Title of webpage-->
+				<h1 class="header-title">SHOP SHOP</h1>
+				<!-- Navigation of site-->
+				<nav class="header-nav">
+					<!-- List of links to areas in site-->
+					<ul>
+						<!-- A link to the site, each link sends you to .../{link} example: .../shroom -->
+						<li><a href="home">Home</a></li>|
+						<li><a href="/items.html">Items</a></li>|
+						<li><a href="faq">FaQ</a></li>|
+						<li><a href="help">Help</a></li>
+					</ul>
+				</nav>
+			</header>
+            <h2>
                 <h1 class="header-title">Shop Shop items</h1>
                 <nav class="header-nav">
                     <select name="Products" id="products">
@@ -22,7 +38,7 @@
                         
                     </select>
                 </nav>
-            </header>
+            </h2>
             <div class="products-container">
                 <div class="product-header"> 
                     <h1 id="product-item">Product</h1>
