@@ -89,6 +89,10 @@ footer{
     cursor: pointer;
 }
 
+.header-nav.Home-page{
+    color: var(--color-light-text-highlight); 
+}
+
 .home-container {
     margin: 2em 0 2em 0; /* Home page container margin */
 }
