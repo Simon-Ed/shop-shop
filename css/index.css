@@ -63,6 +63,7 @@ footer{
     display: flex;
     justify-content: center; /* Center content in the middle (horizontally) */
     align-items: center; /* Center content in the middle (vertically) */
+    text-align: center;
 }
 
 .header-nav ul {

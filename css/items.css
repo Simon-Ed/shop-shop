@@ -5,11 +5,6 @@
 }
 
 
-.header-nav {
-    height: 6vh; /* Set height of peoduct dropdown menu nav */
-    text-align: left;  
-}
-
 /*Adjusts the styling, size and color of the products item dropdown menu */
 #products {
     width: 150px;
