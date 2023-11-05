@@ -1,26 +1,9 @@
-/* Defining style variables */
-:root {
-    /* Background colors */
-    --color-background: #D9D9D9;
-    --color-background-dark: #A4A4A4;
-    --color-background-nav: #797979;
-    /* Text colors */
-    --color-light-text: #FFFFFF;
-    --color-light-text-highlight: #b6b6b6;
-    --color-dark-text: #000000;
-}
-
 .header-title {
     font-size: 35px;
     letter-spacing: 3px;
     z-index: 2; /* Set a higher z-index to make sure it's above the products drop down menu */
 }
 
-
-.header-nav {
-    height: 6vh; /* Set height of peoduct dropdown menu nav */
-    text-align: left;  
-}
 
 /*Adjusts the styling, size and color of the products item dropdown menu */
 #products {
