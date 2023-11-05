@@ -42,7 +42,7 @@
     align-content: start; /* Align items to the top of each row */
 }
 
-.products-item {
+.product-image {
     max-width: 100%; /* Ensure the images don't exceed their container's width */
     height: auto; /* Maintain the aspect ratio of the images */
 }

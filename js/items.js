@@ -8,10 +8,10 @@ class product {
     generatDiv() {
         let div = document.createElement('div')
         div.className = 'products-item';
-        div.innerHTML = `<img src = "${this.imageurl}" class="products-item">
-    <p>name : ${this.name}</p>
-    <p>price: ${this.price}</p>
-    <p>info :${this.info}</p>`
+        div.innerHTML = `<img src = "${this.imageurl}" class="product-image">
+    <p>name : <span class="product-name">${this.name}</span></p>
+    <p>price: <span class="product-price">${this.price}</span></p>
+    <p>info :<span class=product-info>${this.info}</span></p>`
         return div
     }
 
@@ -53,19 +53,35 @@ document.querySelector('#products').addEventListener('click', function (event) {
     populateItems(this.value)
 })
 
+const cartKey = "cart"
 function addToCart(item) {
-    console.log("running");
-    let listKey = "list"
-    let list = JSON.parse(localStorage.getItem(listKey));
+    let list = JSON.parse(localStorage.getItem(cartKey));
     if (list == null) {
         list = [];
     }
     list.push(item);
-    localStorage.setItem(listKey, JSON.stringify(list));
+    localStorage.setItem(cartKey, JSON.stringify(list));
 }
 
-function getAllCart() {
-    let list = localStorage.getItem("list")
-    console.log(list)
-
+function getItemsInCart() {
+    let list = localStorage.getItem(cartKey);
+    console.log(list);
 }
+
+
+// todo: discuss whether to mark or delete an element when added to cart
+/**
+ * When a product is clicked the product will be added to cart
+ */
+function onClickProduct(event){
+    let htmlProduct = event.target.closest(".products-item");
+    let imgSrc = htmlProduct.querySelector(".product-image").src;
+    let name = htmlProduct.querySelector(".product-name").textContent;
+    let price = htmlProduct.querySelector(".product-price").textContent;
+    let info = htmlProduct.querySelector(".product-info").textContent;
+    addToCart(new product(name , price,info,imgSrc));
+}
+
+// using event delegation to add a clicker on the products
+let products = document.querySelector('.products');
+products.onclick = onClickProduct;
