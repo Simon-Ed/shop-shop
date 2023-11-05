@@ -79,6 +79,7 @@ function onClickProduct(event){
     let price = htmlProduct.querySelector(".product-price").textContent;
     let info = htmlProduct.querySelector(".product-info").textContent;
     addToCart(new product(name , price,info,imgSrc));
+    htmlProduct.remove();
 }
 
 // using event delegation to add a clicker on the products
