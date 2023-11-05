@@ -1,7 +1,8 @@
+/* todo: fix better css */
 .container {
   text-align: center;
 }
-
-#shoppingList {
-    list-style: upper-roman;
+.product-image {
+  max-width: 20%; /* Ensure the images don't exceed their container's width */
+  height: auto; /* Maintain the aspect ratio of the images */
 }

@@ -53,20 +53,19 @@ document.querySelector('#products').addEventListener('click', function (event) {
     populateItems(this.value)
 })
 
-const cartKey = "cart"
+
+// TODO: find a better way or make global
+const CART_KEY = "cart";
+
 function addToCart(item) {
-    let list = JSON.parse(localStorage.getItem(cartKey));
+    let list = JSON.parse(localStorage.getItem(CART_KEY));
     if (list == null) {
         list = [];
     }
     list.push(item);
-    localStorage.setItem(cartKey, JSON.stringify(list));
+    localStorage.setItem(CART_KEY, JSON.stringify(list));
 }
 
-function getItemsInCart() {
-    let list = localStorage.getItem(cartKey);
-    console.log(list);
-}
 
 
 // todo: discuss whether to mark or delete an element when added to cart
