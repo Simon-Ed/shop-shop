@@ -1,25 +1,25 @@
 class product {
-    constructor(name, price, info, imageurl){
+    constructor(name, price, info, imageurl) {
         this.name = name
         this.price = price
         this.info = info
         this.imageurl = imageurl
     }
     generatDiv() {
-    let div = document.createElement('div')
-    div.className = 'products-item';
-    div.innerHTML = `<img src = "${this.imageurl}" class="products-item">
+        let div = document.createElement('div')
+        div.className = 'products-item';
+        div.innerHTML = `<img src = "${this.imageurl}" class="products-item">
     <p>name : ${this.name}</p>
     <p>price: ${this.price}</p>
     <p>info :${this.info}</p>`
-    return div
+        return div
     }
 
 }
 
 
-function convertJsonToProduct(item){
-    return new product(item.name,item.price,item.info,item.imageurl)
+function convertJsonToProduct(item) {
+    return new product(item.name, item.price, item.info, item.imageurl)
 }
 
 let jsonobjects;
@@ -52,3 +52,20 @@ document.querySelector('#products').addEventListener('click', function (event) {
     console.log(this.value)
     populateItems(this.value)
 })
+
+function addToCart(item) {
+    console.log("running");
+    let listKey = "list"
+    let list = JSON.parse(localStorage.getItem(listKey));
+    if (list == null) {
+        list = [];
+    }
+    list.push(item);
+    localStorage.setItem(listKey, JSON.stringify(list));
+}
+
+function getAllCart() {
+    let list = localStorage.getItem("list")
+    console.log(list)
+
+}
