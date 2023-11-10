@@ -11,7 +11,8 @@ class product {
         div.innerHTML = `<img src = "${this.imageurl}" class="product-image">
     <p>name : <span class="product-name">${this.name}</span></p>
     <p>price: <span class="product-price">${this.price}</span></p>
-    <p>info :<span class=product-info>${this.info}</span></p>`
+    <p>info :<span class=product-info>${this.info}</span></p>
+    <button type="button" class="button">Add to cart</button> `
         return div
     }
 
@@ -31,6 +32,16 @@ function appendItemToHtml(item) {
     document.querySelector('.products').appendChild(div)
 
 };
+//adds eventlisteners to the buttons on the page.
+function addEventListeners() {
+    let buttons = document.querySelectorAll('.button')
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function (event) {
+            onClickProduct(event);
+        })
+    }
+}
+
 //takes a filter, defined by the selection box, and populates the webpage with the items that match the filter.
 function populateItems(filter) {
     document.querySelector('#product-item').textContent = filter
@@ -40,6 +51,7 @@ function populateItems(filter) {
             appendItemToHtml(convertJsonToProduct(jsonobjects[i]))
         }
     }
+    addEventListeners()
 }
 //fetches the json data and populates the webpage on first load.
 fetch("../json/items.json").then((response) => response.json())
@@ -48,7 +60,7 @@ fetch("../json/items.json").then((response) => response.json())
         populateItems('all')
     });
 //repopulates the webpage each time a filter value is selected.
-document.querySelector('#products').addEventListener('click', function (event) {
+document.querySelector('#products').addEventListener('change', function (event) {
     console.log(this.value)
     populateItems(this.value)
 })
@@ -79,9 +91,11 @@ function onClickProduct(event){
     let price = htmlProduct.querySelector(".product-price").textContent;
     let info = htmlProduct.querySelector(".product-info").textContent;
     addToCart(new product(name , price,info,imgSrc));
-    htmlProduct.remove();
+    event.target.textContent = "Added to cart";
+    event.target.disabled = true;
+    //htmlProduct.remove();
 }
 
 // using event delegation to add a clicker on the products
-let products = document.querySelector('.products');
-products.onclick = onClickProduct;
+//let products = document.querySelector('.products');
+//products.onclick = onClickProduct;
