@@ -80,7 +80,6 @@ function addToCart(item) {
 
 
 
-// todo: discuss whether to mark or delete an element when added to cart
 /**
  * When a product is clicked the product will be added to cart
  */
@@ -93,9 +92,5 @@ function onClickProduct(event){
     addToCart(new product(name , price,info,imgSrc));
     event.target.textContent = "Added to cart";
     event.target.disabled = true;
-    //htmlProduct.remove();
 }
 
-// using event delegation to add a clicker on the products
-//let products = document.querySelector('.products');
-//products.onclick = onClickProduct;

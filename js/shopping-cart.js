@@ -1,6 +1,7 @@
 // TODO: find a better way or make global
 const CART_KEY = "cart";
 
+// adds remove event listener to all remove buttons
 function addRemoveEventListeners() {
     let removeButtons = document.querySelectorAll('.removeButton')
 
@@ -28,6 +29,7 @@ function populateCart() {
 
 populateCart();
 
+// removes a product from the html and from local storage
 function removeFromCart(event) {
     let htmlProduct = event.target.closest(".product-in-cart");
     let imgSrc = htmlProduct.querySelector(".product-image").src;
@@ -35,6 +37,9 @@ function removeFromCart(event) {
     let price = htmlProduct.querySelector(".product-price").textContent;
     let info = htmlProduct.querySelector(".product-info").textContent;
 
+    htmlProduct.remove();
+
+    // remove from local storage
     let items = JSON.parse(localStorage.getItem(CART_KEY));
     if (items == null) {
         return
@@ -51,7 +56,6 @@ function removeFromCart(event) {
 
     localStorage.setItem(CART_KEY, JSON.stringify(newItems));
 
-    htmlProduct.remove();
 }
 
 //creates a div element and adds content to it from the json object passed to it.
