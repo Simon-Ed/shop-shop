@@ -48,9 +48,11 @@ function removeFromCart(event) {
     let found = false;
     for (let i =0; i < items.length; i++) {
         let item = items[i];
-        if (found || !(item.name == name && item.price == price && item.info == info && item.imageurl == imgSrc)) {
+        if (found || item.name != name || item.price != price ||
+            item.info != info || item.imageurl != imgSrc) {
             newItems.push(item);
-            found = true;
+        } else {
+            found = true
         }
     }
 
